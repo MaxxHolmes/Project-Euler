@@ -1,4 +1,4 @@
-# Solution to Project Euler - Problem 2
+# Solution to Project Euler - Problem 4
 # MaxxHolmes
 
 # A palindromic number reads the same both ways.
