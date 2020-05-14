@@ -5,6 +5,9 @@
 # The sum of these multiples is 23. Find the sum of all the multiples of 3 or 5 below 1000.
 # ________________________________________________________________________________________________
 
+import time
+start = time.time()
+
 # There are two things to consider when solving this problem:
 #	-	How do we get the multiples of 3 and 5 all the way to 999
 #	-	How do we exclude numbers that are multiples of both 3 and 5 (multiples of 15)
@@ -22,3 +25,4 @@ def solution():
 	return str(answer)
 
 print(solution())
+print(time.time() - start)

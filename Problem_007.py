@@ -5,6 +5,9 @@
 # What is the 10001st prime?
 #_____________________________________________________________________
 
+import time
+start = time.time()
+
 # We can use the ancient algorithm the "Sieve of Eratosthenes"
 # This marks all multiples of primes as composite, to find all primes
 # up to some upper limit m.
@@ -43,3 +46,4 @@ def SieveOfEratosthenes(n):
 upper_bound = math.ceil(upper_bound_for_nth_prime(10001))
 primes = SieveOfEratosthenes(upper_bound)
 print(primes[10000])
+print(time.time() - start)

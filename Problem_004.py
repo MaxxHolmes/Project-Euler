@@ -6,6 +6,9 @@
 # Find the largest palindrome made from the product of two 3-digit numbers.
 #___________________________________________________________________________
 
+import time
+start = time.time()
+
 # As any 6 digit palindrome we create must follow the formula:
 # 100000a + 10000b + 1000c + 100c + 10b + 1a = 100001a + 10010b + 1100c = xy
 # therefore
@@ -29,3 +32,4 @@ for x in range(999, 100, -1):
 			pass
 
 print(answer)
+print(time.time() - start)

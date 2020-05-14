@@ -6,6 +6,9 @@
 # What is the smallest positive number that is evenly divisble by all the numbers from 1 to 20?
 #_____________________________________________________________________________________________
 
+import time
+start = time.time()
+
 def divider(n):
 
 	for i in range(2, 21):
@@ -21,3 +24,4 @@ while True:
 		n = n + 20
 
 print(n)
+print(time.time() - start)

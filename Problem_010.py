@@ -4,6 +4,9 @@
 # Find the sum of all the primes below two million
 #_____________________________________________________________________
 
+import time
+start = time.time()
+
 # We can use the ancient algorithm the "Sieve of Eratosthenes"
 # Just like in question 7. This time we are given the upper limit 2000000
 
@@ -33,3 +36,4 @@ def SumOfSieveOfEratosthenes(n):
 	return answer
 
 print(SumOfSieveOfEratosthenes(2000000))
+print(time.time() - start)

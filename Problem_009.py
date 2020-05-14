@@ -8,6 +8,9 @@
 # Find the product abc for that triplet.
 #_____________________________________________________________________
 
+import time
+start = time.time()
+
 def pythagorean_triplet_product(n):
 
 	for a in range(1, n+1):
@@ -20,4 +23,4 @@ def pythagorean_triplet_product(n):
 				return a*b*c
 
 print(pythagorean_triplet_product(1000))
-
+print(time.time() - start)

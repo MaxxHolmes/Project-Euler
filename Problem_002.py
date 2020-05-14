@@ -9,6 +9,9 @@
 
 # _______________________________________________________________________________________
 
+import time
+start = time.time()
+
 # This is a classic fibonacci problem with a summing element.
 # The fibonacci sequence is defined as f(n) = f(n-1) + f(n-2), with f(1) and f(2) being
 # equal to 1 and 2 respectively.
@@ -29,3 +32,4 @@ def solution():
 	return str(answer)
 
 print(solution())
+print(time.time() - start)

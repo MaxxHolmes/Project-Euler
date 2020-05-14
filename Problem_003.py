@@ -5,6 +5,9 @@
 # What is the largest prime factor of the number 600851475143?
 #___________________________________________________________________________
 
+import time
+start = time.time()
+
 # We can use the Fundamental Theorem of Numbers.
 # Check out #WebsiteLinkHere for the full explanation for this solution!
 
@@ -29,3 +32,4 @@ def solution():
 		return str(n)
 
 print(solution())
+print(time.time() - start)

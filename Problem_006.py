@@ -11,6 +11,9 @@
 # square of the sum
 #_____________________________________________________________________________________________
 
+import time
+start = time.time()
+
 def solution():
 
 	n = 100
@@ -19,3 +22,4 @@ def solution():
 	return str(x**2 - y)
 
 print(solution())
+print(time.time() - start)
