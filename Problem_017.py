@@ -5,6 +5,9 @@
 # were written out in words, how many letters would be used? 
 #______________________________________________________________________________
 
+import time
+start = time.time()
+
 def number_in_english(n, ones, tens):
 	if 0 <= n < 20:
 		return ones[n]
@@ -28,3 +31,5 @@ tens = ["", "", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eight
 
 
 print(solution(ones, tens))
+
+print(time.time() - start)

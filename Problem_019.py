@@ -7,6 +7,8 @@
 
 import time
 
+start = time.time()
+
 months = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 
 def leap_year_check(year):
@@ -33,3 +35,4 @@ def sunday_counter():
 	return sunday_count
 
 print(sunday_counter())
+print(time.time() - start)
