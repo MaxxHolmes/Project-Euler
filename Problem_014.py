@@ -31,7 +31,7 @@ def collatz_chain_length(x):
 def solution():
 	answer = 0
 	chain_max = -1
-	for i in range(1, 999992):
+	for i in range(1, 1000000):
 		chain = collatz_chain_length(i)
 		if chain > chain_max:
 			chain_max = chain
